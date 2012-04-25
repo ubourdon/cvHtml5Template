@@ -1,3 +1,77 @@
-footer {
+body {
+    color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+}
 
+section, header {
+    width: 760px;
+    margin: auto;
+}
+
+header {
+    margin-top: 20px;
+    padding: 10px 20px 10px 120px;
+    background-color: red;
+}
+
+#identity {
+    position: fixed;
+    width: 320px;
+    height: 250px;/*temporaire*/
+    top: 82px;
+    background-color: #8a2be2;
+    margin-left: 50px;
+    font-size: 0.9em;
+}
+
+#photo {
+    width: 100px;
+    height: 125px;
+    border: solid 1px black;
+}
+
+#perso {
+    margin-top: 20px;
+}
+
+#main {
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 120px;
+    text-align: justify;
+    background-color: #f5f5dc;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+nav ul, .flottant ul {
+    list-style: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    width: 780px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 380px;
+    background-color: red;
+    border: 1px solid black;
+
+}
+
+nav ul li {
+    display: inline-block;
+    border-right: 1px solid black;
+    height: 30px;
+    padding: 10px 10px 0 10px;
+}
+
+.flottant {
+    display: inline-block;
 }
