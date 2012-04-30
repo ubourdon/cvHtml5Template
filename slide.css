@@ -1,27 +1,44 @@
 .wrapper{
     margin:20px auto;
-    width:350px;
+    width:100%;
     text-align:center;
+}
+
+.sliderContainer{
+    position:relative;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    /*border-radius: 10px;
+    border:10px solid #fff;*/
+
+    height:440px;
+    width:780px;
+
+    overflow:hidden;
 }
 
 .content{
     color: black;
     position:absolute;
-    background:#fff;
+
     top:0px;
     left:-10px;
+
     height:450px;
-    width:2000px;
-    -webkit-transition:all 1s ease;
-    -moz-transition:all 1s ease;
-    -o-transition:all 1s ease;
-    transition:all 1s ease;
+    width:3200px;
+
+    -webkit-transition:all 2s ease;
+    -moz-transition:all 2s ease;
+    -o-transition:all 2s ease;
+    transition:all 2s ease;
+
     clear:both;
 }
 
 .item{
     float:left;
-    width:500px;
+    width:800px;
     height:400px;
     position:relative;
 }
@@ -29,7 +46,7 @@
 #article1, #article2, #article3, #article4{
     overflow:hidden;
     background:transparent;
-    width:500px;
+    width:800px;
     height:450px;
     margin:0 auto;
     position:relative;
@@ -39,20 +56,9 @@
     left:-10px;
 }
 
-.sliderContainer{
-    position:relative;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border:10px solid #fff;
-    height:440px;
-    width:480px;
-    overflow:hidden;
-}
-
 #article2:target .content, #article3:target .content, #article4:target .content{
     -webkit-transform: translate(-500px, 0px);
-    -moz-transform: translate(-500px, 0px);
+    -moz-transform: translate(-800px, 0px);
     -o-transform: translate(-300px, 0px);
     -ms-transform: translate(-300px, 0px);
     transform: translate(-300px, 0px);
@@ -60,7 +66,7 @@
 
 #article3:target .content{
     -webkit-transform: translate(-600px, 0px);
-    -moz-transform: translate(-1000px, 0px);
+    -moz-transform: translate(-1600px, 0px);
     -o-transform: translate(-600px, 0px);
     -ms-transform: translate(-600px, 0px);
     transform: translate(-600px, 0px);
@@ -68,7 +74,7 @@
 
 #article4:target .content{
     -webkit-transform: translate(-900px, 0px);
-    -moz-transform: translate(-1500px, 0px);
+    -moz-transform: translate(-2400px, 0px);
     -o-transform: translate(-900px, 0px);
     -ms-transform: translate(-900px, 0px);
     transform: translate(-900px, 0px);
