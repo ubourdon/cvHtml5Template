@@ -24,18 +24,20 @@ header {
 
 #identity {
     position: fixed;
-    width: 320px;
+    width: 310px;
     height: 250px;/*temporaire*/
-    top: 82px;
-    background-color: #808080;
+    top: 92px;
+    background-color: #758AA8;
     margin-left: 50px;
     font-size: 0.9em;
+    padding: 10px;
 }
 
 #photo {
     width: 100px;
     height: 125px;
     border: solid 1px black;
+    margin-right: 10px;
 }
 
 #perso {
@@ -79,6 +81,7 @@ nav ul li {
     margin-top: 30px;
     padding: 0 20px 0 160px;
     text-align: justify;
+    background-color: #808080;
 }
 
 /**

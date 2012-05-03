@@ -31,7 +31,7 @@
     -webkit-transition:all 2s ease;
     -moz-transition:all 2s ease;
     -o-transition:all 2s ease;
-    transition:all 2s ease;
+    /*transition:all 2s ease;*/
 
     clear:both;
 }
@@ -61,7 +61,7 @@
     -moz-transform: translate(-800px, 0px);
     -o-transform: translate(-300px, 0px);
     -ms-transform: translate(-300px, 0px);
-    transform: translate(-300px, 0px);
+    /*transform: translate(-300px, 0px);*/
 }
 
 #article3:target .content{
@@ -69,7 +69,7 @@
     -moz-transform: translate(-1600px, 0px);
     -o-transform: translate(-600px, 0px);
     -ms-transform: translate(-600px, 0px);
-    transform: translate(-600px, 0px);
+    /*transform: translate(-600px, 0px);*/
 }
 
 #article4:target .content{
@@ -77,5 +77,5 @@
     -moz-transform: translate(-2400px, 0px);
     -o-transform: translate(-900px, 0px);
     -ms-transform: translate(-900px, 0px);
-    transform: translate(-900px, 0px);
+    /*transform: translate(-900px, 0px);*/
 }
