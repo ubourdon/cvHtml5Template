@@ -4,11 +4,11 @@ $(document ).ready( function() {
             renderTo: 'timeline',
             type: 'column',
             backgroundColor: '#F5F5F5',
-            height: 200,
-            spacingTop: 0,
+            height: 230,
+            spacingTop: 20,
             inverted: true
         },
-        title: {text: ''},
+        title: {text: 'Expériences'},
         yAxis: {
             gridLineWidth: 1,
             gridLineDashStyle: 'dash',
@@ -25,12 +25,7 @@ $(document ).ready( function() {
                 },
                 formatter: function() {
                     if (this.value < 0) return ''
-                    else if( this.value != 0 ) return ''
-                    else if( this.value != 1 ) return ''
-                    /*else if( this.value != 1 ) return ''*/
-                    /*else if( this.value != 2 ) return ''
-                    else if( this.value != 3 ) return ''
-                    else if( this.value != 4 ) return ''*/
+                    else if( this.value % 1 != 0 ) return ''
                     else return this.value + ' ans'
                 }
             }
