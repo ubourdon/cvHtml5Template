@@ -4,7 +4,7 @@ $(document ).ready( function() {
             renderTo: 'timeline',
             type: 'column',
             backgroundColor: '#F5F5F5',
-            height: 100,
+            height: 200,
             spacingTop: 0,
             inverted: true
         },
@@ -25,6 +25,12 @@ $(document ).ready( function() {
                 },
                 formatter: function() {
                     if (this.value < 0) return ''
+                    else if( this.value != 0 ) return ''
+                    else if( this.value != 1 ) return ''
+                    /*else if( this.value != 1 ) return ''*/
+                    /*else if( this.value != 2 ) return ''
+                    else if( this.value != 3 ) return ''
+                    else if( this.value != 4 ) return ''*/
                     else return this.value + ' ans'
                 }
             }
@@ -48,7 +54,7 @@ $(document ).ready( function() {
             {
                 name: 'Vidal',
                 data: [0.66],
-                color: '#EAEA86',
+                color: 'orange',
                 events: {
                     click: function(event) {
                         $.scrollTo('#iut', 300, {offset: -40})
@@ -95,23 +101,26 @@ $(document ).ready( function() {
         legend: {enabled: false},
         tooltip: {
             formatter: function() {
-                return this.series.name + ' : ' + this.y +' years';
+                return this.series.name + ' : ' + this.y +' ans';
             }
         },
         plotOptions: {
             column: {
                 animation: false,
-                pointWidth: 40,
+                pointWidth: 70,
                 stacking: 'normal',
                 dataLabels: {
                     rotation: 350,
-                    x: 2,
                     enabled: true,
                     formatter: function() {
                         return this.series.name;
                     },
-                    x: -45,
-                    align: 'right'
+                    x: 0,
+                    align: 'center',
+                    style: {
+                        font: 'bold 13px Verdana, sans-serif',
+                        color: 'white'
+                    }
                 }
             }
         }
